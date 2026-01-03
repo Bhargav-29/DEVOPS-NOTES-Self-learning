@@ -1,6 +1,8 @@
 # DEVOPS-NOTES-Self-learning        
 
 MODULE 1 – DEVOPS FUNDAMENTALS
+
+
 Goal of Module 1
 
 By the end of this module, you should confidently explain:
