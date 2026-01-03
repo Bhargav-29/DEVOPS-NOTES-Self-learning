@@ -11,3 +11,155 @@ Explain CI/CD
 Explain the DevOps lifecycle with tools & AWS
 
 Answer basic DevOps interview questions confidently
+
+
+
+What is DevOps ?
+
+DevOps = Devlopment + Operations
+
+-->DevOps is a culture and set of practices that combines Development and Operations to automate software delivery.
+
+-->Devops is combination of culture, Automation and tools that helps to deliver applications faster and more Reliable.
+
+key point:
+
+* Where DevOps reduces manual work and deployment issues by automating the entire software delivery process
+
+* Where Agile methodology concentrates on faster delivery , DevOps Focous on faster and stable Delivery or deployments
+
+
+why DevOps is needed ?
+
+We Use to fallow Traditional Model before DevOps Came into Picture Where in traditional method we use to do
+
+-->Development and Operations worked separately
+-->Manual deployments
+-->Slow releases
+-->Frequent failures
+
+After the emergence of DevOps, everything transformed — processes became faster, collaboration improved, and the way software was delivered changed forever.
+
+-->Automation
+-->Faster Deplyments
+-->Continous feedback
+-->Stable environments
+
+Key differences on Agile and DevOps
+-----------------------------------
+
+| Agile                  | DevOps                           |
+| ---------------------- | -------------------------------- |
+| Focus on development   | Focus on deployment & operations |
+| Sprint-based coding    | Continuous delivery              |
+| Ends after development | Continues into production        |
+
+What is CI/CD ?
+
+lets say it is a heart of DevOps 
+CI/CD is an automated process that builds, tests, and deploys code whenever developers push changes.
+CI/CD automates the complete process from code commit to deployment.
+
+CI – Continuous Integration
+---------------------------
+Developers frequently push code to a shared repository
+Each commit automatically triggers:
+Build
+Tests
+Code quality checks
+
+Before CI:
+
+Developers merged code once in weeks
+Huge conflicts
+Build failures at the last moment
+
+*****CI solves this by early detection of issues.*****
+
+
+
+Real-Time CI Flow 
+------------------
+
+---->Scenario<----(Go through this to get the basics — once you work with all the concepts, it’ll make much more sense)
+
+You are working on a Java application.
+
+Tools Used
+
+ ->GitHub (code)
+ ->Jenkins (CI)
+ ->Maven (build)
+ ->SonarQube (code quality)
+ ->AWS EC2 (Jenkins server)
+
+Flow
+
+ 1.Developer pushes code to GitHub
+ 2.GitHub webhook triggers Jenkins
+ 3.Jenkins pipeline:
+    .Pulls code
+    .Runs mvn clean install
+    .Runs unit tests
+    .Runs SonarQube scan
+
+Build result:
+
+  SUCCESS → move to CD
+  FAILURE → stop pipeline
+
+CI Jenkins Pipeline
+
+ Checkout → Build → Unit Test → Code Quality
+
+
+Continuous Delivery (CD – Delivery vs Deployment)
+-------------------------------------------------
+Continuous Delivery
+ .Code is always deployable
+ .Deployment needs manual approval
+
+Continuous Deployment
+ .Code is automatically deployed to production
+
+in Real time most of the companies user Continous Delivery
+
+
+Real-Time CD Flow (AWS Example)
+🔹 Tools Used
+    ->Jenkins
+    ->AWS EC2 / ECS / EKS
+    ->S3 (artifacts)
+    ->Load Balancer
+
+🔹 Flow
+
+  1. CI completes successfully
+  2. Artifact stored in Nexus / S3
+  3. Jenkins triggers deployment job
+  4. Application deployed to:
+      EC2 (traditional)
+      ECS / EKS (containers)
+  5.Health check via Load Balancer
+  6.Rollback if deployment fails
+
+
+End-to-End CI/CD PIPELINE (REAL PROJECT FLOW)
+
+Developer
+   ↓
+GitHub (commit)
+   ↓
+Jenkins (CI)
+   ↓
+Maven build + tests
+   ↓
+Artifact (Nexus / S3)
+   ↓
+Jenkins (CD)
+   ↓
+AWS EC2 / ECS / EKS
+   ↓
+CloudWatch monitoring
+
+
