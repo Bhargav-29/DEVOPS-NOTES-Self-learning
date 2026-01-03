@@ -25,7 +25,7 @@ Module 2: Linux for DevOps
 
 Purpose: Core operating system skills
 
-*Topics*
+--Topics--
 
 Linux architecture
 
@@ -49,7 +49,7 @@ Module 3: Linux Shell Scripting
 
 Purpose: Automation foundation
 
-*Topics*
+--Topics--
 
 Variables
 
@@ -69,7 +69,7 @@ Module 4: Git & GitHub
 
 Purpose: Version control mastery
 
-*Topics*
+--Topics--
 
 Git workflow
 
@@ -90,7 +90,7 @@ Module 5: Build Tools
 Purpose: Application build understanding
 
 
-*Topics*
+--Topics--
 
 Maven lifecycle
 
@@ -106,7 +106,7 @@ Module 6: CI/CD with Jenkins
 
 Purpose: DevOps core skill
 
-*Topics*
+--Topics--
 
 Jenkins architecture
 
@@ -126,7 +126,7 @@ Module 7: AWS Cloud for DevOps
 
 Purpose: Cloud foundation
 
-*Topics*
+--Topics--
 
 IAM
 
@@ -146,7 +146,7 @@ Module 8: Docker (Containers)
 
 Purpose: Application containerization
 
-*Topics*
+--Topics--
 
 Docker architecture
 
@@ -167,7 +167,7 @@ Module 9: Kubernetes
 
 Purpose: Container orchestration
 
-*Topics*
+--Topics--
 
 Kubernetes architecture
 
@@ -188,7 +188,7 @@ Module 10: Infrastructure as Code (IaC)
 
 Purpose: Infrastructure automation
 
-*Topics*
+--Topics--
 
 Terraform basics
 
@@ -207,7 +207,7 @@ Module 11: Configuration Management
 
 Purpose: Server automation
 
-*Topics*
+--Topics--
 
 Ansible architecture
 
@@ -225,7 +225,7 @@ Module 12: Monitoring & Logging
 
 Purpose: Production readiness
 
-*Topics*
+--Topics--
 
 Metrics vs Logs
 
@@ -241,7 +241,7 @@ Module 13: Security & DevSecOps
 
 Purpose: Secure pipelines
 
-*Topics*
+--Topics--
 
 IAM best practices
 
